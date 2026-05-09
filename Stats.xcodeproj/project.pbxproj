@@ -210,6 +210,14 @@
 		9AF9EE0F2464875F005D2270 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EE0E2464875F005D2270 /* main.swift */; };
 		9AF9EE1124648ADC005D2270 /* readers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EE1024648ADC005D2270 /* readers.swift */; };
 		AA00000000000000000000A1 /* libIOReport.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1E45552D11D66200525864 /* libIOReport.tbd */; };
+		AA000004AA000004AA000004 /* Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA000002AA000002AA000002 /* Remote.framework */; };
+		AA000005AA000005AA000005 /* Remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA000002AA000002AA000002 /* Remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA000011AA000011AA000011 /* Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2846F72666A9CC00EC1F6D /* Kit.framework */; };
+		AA000017AA000017AA000017 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000012AA000012AA000012 /* main.swift */; };
+		AA000018AA000018AA000018 /* reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000013AA000013AA000013 /* reader.swift */; };
+		AA000019AA000019AA000019 /* popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000014AA000014AA000014 /* popup.swift */; };
+		AA00001AAA00001AAA00001A /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000015AA000015AA000015 /* settings.swift */; };
+		AA00001BAA00001BAA00001B /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA000016AA000016AA000016 /* config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -395,6 +403,20 @@
 			remoteGlobalIDString = 9AF9EE0124648751005D2270;
 			remoteInfo = Disk;
 		};
+		AA000009AA000009AA000009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1410ED229E721100D29793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA000001AA000001AA000001;
+			remoteInfo = Remote;
+		};
+		AA00000BAA00000BAA00000B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1410ED229E721100D29793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2846F62666A9CC00EC1F6D;
+			remoteInfo = Kit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -458,6 +480,7 @@
 			files = (
 				9AF9EE0A24648751005D2270 /* Disk.framework in Embed Frameworks */,
 				5C2229A429CCB3C400F00E69 /* Clock.framework in Embed Frameworks */,
+				AA000005AA000005AA000005 /* Remote.framework in Embed Frameworks */,
 				9A81C75E2449A41400825D92 /* RAM.framework in Embed Frameworks */,
 				9AE29ADD249A50350071B02D /* Sensors.framework in Embed Frameworks */,
 				9A11AAD7266FD77F000C1C05 /* Bluetooth.framework in Embed Frameworks */,
@@ -730,6 +753,12 @@
 		CE47845D298F55F900F564FD /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F8A38F83253303A8006D4D81 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FCBD9253255C7D9900E1621A /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AA000002AA000002AA000002 /* Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000012AA000012AA000012 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AA000013AA000013AA000013 /* reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reader.swift; sourceTree = "<group>"; };
+		AA000014AA000014AA000014 /* popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popup.swift; sourceTree = "<group>"; };
+		AA000015AA000015AA000015 /* settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
+		AA000016AA000016AA000016 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -876,9 +905,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA00000FAA00000FAA00000F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000011AA000011AA000011 /* Kit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA000003AA000003AA000003 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				AA000012AA000012AA000012 /* main.swift */,
+				AA000013AA000013AA000013 /* reader.swift */,
+				AA000014AA000014AA000014 /* popup.swift */,
+				AA000015AA000015AA000015 /* settings.swift */,
+				AA000016AA000016AA000016 /* config.plist */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		5C22299E29CCB3C400F00E69 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
@@ -1248,6 +1297,7 @@
 				9ABFF8F7248BEBCB00C9041A /* Battery */,
 				9A11AAD0266FD77F000C1C05 /* Bluetooth */,
 				5C22299E29CCB3C400F00E69 /* Clock */,
+				AA000003AA000003AA000003 /* Remote */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1405,9 +1455,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA00000DAA00000DAA00000D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AA000001AA000001AA000001 /* Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000006AA000006AA000006 /* Build configuration list for PBXNativeTarget "Remote" */;
+			buildPhases = (
+				AA00000DAA00000DAA00000D /* Headers */,
+				AA00000EAA00000EAA00000E /* Sources */,
+				AA00000FAA00000FAA00000F /* Frameworks */,
+				AA000010AA000010AA000010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA00000CAA00000CAA00000C /* PBXTargetDependency */,
+			);
+			name = Remote;
+			productName = Remote;
+			productReference = AA000002AA000002AA000002 /* Remote.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5C22299C29CCB3C400F00E69 /* Clock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C2229A529CCB3C400F00E69 /* Build configuration list for PBXNativeTarget "Clock" */;
@@ -1515,6 +1591,7 @@
 				9A2846FD2666A9CC00EC1F6D /* PBXTargetDependency */,
 				9A11AAD5266FD77F000C1C05 /* PBXTargetDependency */,
 				5C2229A229CCB3C400F00E69 /* PBXTargetDependency */,
+				AA00000AAA00000AAA00000A /* PBXTargetDependency */,
 				5CE7E79B2C318513006BC92C /* PBXTargetDependency */,
 			);
 			name = Stats;
@@ -1872,6 +1949,7 @@
 				9AE29AD4249A50350071B02D /* Sensors */,
 				9A11AACE266FD77F000C1C05 /* Bluetooth */,
 				5C22299C29CCB3C400F00E69 /* Clock */,
+				AA000001AA000001AA000001 /* Remote */,
 				9AAC5E29280ACC120043D892 /* Tests */,
 				5CFE492629264DF1000F2856 /* Helper */,
 				5CE7E7892C318512006BC92C /* WidgetsExtension */,
@@ -1993,6 +2071,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB14B78248CEF3B00DC6731 /* config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000010AA000010AA000010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00001BAA00001BAA00001B /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2271,6 +2357,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA00000EAA00000EAA00000E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000017AA000017AA000017 /* main.swift in Sources */,
+				AA000018AA000018AA000018 /* reader.swift in Sources */,
+				AA000019AA000019AA000019 /* popup.swift in Sources */,
+				AA00001AAA00001AAA00001A /* settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2403,6 +2500,16 @@
 			isa = PBXTargetDependency;
 			target = 9AF9EE0124648751005D2270 /* Disk */;
 			targetProxy = 9AF9EE0724648751005D2270 /* PBXContainerItemProxy */;
+		};
+		AA00000AAA00000AAA00000A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA000001AA000001AA000001 /* Remote */;
+			targetProxy = AA000009AA000009AA000009 /* PBXContainerItemProxy */;
+		};
+		AA00000CAA00000CAA00000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2846F62666A9CC00EC1F6D /* Kit */;
+			targetProxy = AA00000BAA00000BAA00000B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3664,6 +3771,81 @@
 			};
 			name = Release;
 		};
+		AA000007AA000007AA000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = RP2S87B72W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Serhiy Mytrovtsiy. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.exelban.Stats.Remote;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA000008AA000008AA000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = RP2S87B72W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Serhiy Mytrovtsiy. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eu.exelban.Stats.Remote;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3816,6 +3998,15 @@
 			buildConfigurations = (
 				9AF9EE0B24648751005D2270 /* Debug */,
 				9AF9EE0C24648751005D2270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000006AA000006AA000006 /* Build configuration list for PBXNativeTarget "Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000007AA000007AA000007 /* Debug */,
+				AA000008AA000008AA000008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
