@@ -7,5 +7,39 @@
 	<true/>
 	<key>Symbol</key>
 	<string>network</string>
+	<key>Widgets</key>
+	<dict>
+		<key>mini</key>
+		<dict>
+			<key>Default</key>
+			<true/>
+			<key>Label</key>
+			<false/>
+			<key>Title</key>
+			<string>RMT</string>
+			<key>Color</key>
+			<string>monochrome</string>
+			<key>Preview</key>
+			<dict>
+				<key>Label</key>
+				<false/>
+				<key>Title</key>
+				<string>RMT</string>
+				<key>Value</key>
+				<string>0.35</string>
+			</dict>
+			<key>Order</key>
+			<integer>0</integer>
+		</dict>
+		<key>label</key>
+		<dict>
+			<key>Default</key>
+			<false/>
+			<key>Title</key>
+			<string>RMT</string>
+			<key>Order</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
 </dict>
 </plist>
